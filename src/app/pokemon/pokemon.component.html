@@ -1,0 +1,13 @@
+<div class="mt-3">
+    <img [src]="pokemon.img" width="500px" class="shadow-lg rounded">  
+    <p>Id: {{pokemon.id}}</p>
+    <p>Nome: {{pokemon.name | titlecase}}</p>
+    <p>Altura: {{pokemon.height}}</p>
+    <p>Peso: {{pokemon.weight}}</p>
+</div>
+
+<button class="btn btn-danger" [ngClass]="{'mr-2': true}" (click)="anteriorPokemon()">
+Anterior</button>
+
+<button class="btn btn-primary" [ngClass]="{'ml-2': true}" (click)="proximoPokemon()">
+Próximo</button>
